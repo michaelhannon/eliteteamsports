@@ -208,52 +208,30 @@
   .nav-cta {
     background: var(--ink);
     color: var(--bone);
-    border: none;
-    padding: 0.8rem 1.6rem;
-    font-family: 'Anton', sans-serif;
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
-  }
-
-  .nav-cta:hover { background: var(--red); transform: translate(-2px, -2px); box-shadow: 4px 4px 0 var(--ink); }
-
-  .nav-actions {
-    display: flex;
-    gap: 0.7rem;
-    align-items: center;
-  }
-
-  .nav-account {
-    background: transparent;
-    color: var(--ink);
-    padding: 0.8rem 1.2rem;
-    font-family: 'Anton', sans-serif;
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all 0.2s;
-    text-decoration: none;
     border: 2px solid var(--ink);
+    padding: 0.8rem 1.4rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    white-space: nowrap;
   }
 
-  .nav-account:hover {
-    background: var(--ink);
-    color: var(--bone);
+  .nav-cta:hover {
+    background: var(--red);
+    border-color: var(--red);
     transform: translate(-2px, -2px);
-    box-shadow: 4px 4px 0 var(--red);
+    box-shadow: 4px 4px 0 var(--ink);
   }
 
-  .nav-account svg {
-    width: 16px;
-    height: 16px;
+  .nav-cta-sep {
+    opacity: 0.5;
+    margin: 0 0.15rem;
   }
 
   /* ─── HERO ─── */
@@ -658,139 +636,6 @@
   .feature p {
     font-size: 0.95rem;
     opacity: 0.85;
-  }
-
-  /* ─── MEMBERSHIP ─── */
-  .membership {
-    padding: 8rem 0;
-    background: var(--ink);
-    color: var(--bone);
-    overflow: hidden;
-    position: relative;
-  }
-
-  .membership::before {
-    content: 'MEMBERS';
-    position: absolute;
-    top: 30%; left: -3%;
-    font-family: 'Anton', sans-serif;
-    font-size: 22rem;
-    color: var(--bone);
-    opacity: 0.03;
-    line-height: 1;
-    pointer-events: none;
-  }
-
-  .membership .section-label { color: var(--red); }
-
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 4rem;
-    position: relative;
-    z-index: 2;
-  }
-
-  .price-card {
-    background: var(--bone);
-    color: var(--ink);
-    padding: 2.5rem 2rem;
-    position: relative;
-    transition: transform 0.3s;
-  }
-
-  .price-card:hover { transform: translateY(-8px); }
-
-  .price-card.featured {
-    background: var(--red);
-    color: var(--chalk);
-    transform: scale(1.04);
-  }
-
-  .price-card.featured:hover { transform: scale(1.04) translateY(-8px); }
-
-  .price-badge {
-    position: absolute;
-    top: -12px; right: 2rem;
-    background: var(--ink);
-    color: var(--bone);
-    padding: 0.4rem 0.8rem;
-    font-family: 'Anton', sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .price-tier {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 0.5rem;
-  }
-
-  .price-name {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    line-height: 1;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid currentColor;
-  }
-
-  .price-features {
-    list-style: none;
-    margin-bottom: 2.5rem;
-  }
-
-  .price-features li {
-    padding: 0.7rem 0;
-    font-size: 0.95rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 0.7rem;
-  }
-
-  .price-features li::before {
-    content: '→';
-    color: currentColor;
-    font-weight: bold;
-    flex-shrink: 0;
-  }
-
-  .price-cta {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    background: var(--ink);
-    color: var(--bone);
-    text-decoration: none;
-    font-family: 'Anton', sans-serif;
-    font-size: 1rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    transition: all 0.2s;
-    border: 2px solid var(--ink);
-  }
-
-  .price-card.featured .price-cta {
-    background: var(--bone);
-    color: var(--red);
-    border-color: var(--bone);
-  }
-
-  .price-cta:hover {
-    background: transparent;
-    color: var(--ink);
-  }
-
-  .price-card.featured .price-cta:hover {
-    background: var(--ink);
-    color: var(--bone);
-    border-color: var(--ink);
   }
 
   /* ─── SERVICES ─── */
@@ -1443,10 +1288,9 @@
     .nav-logo svg { width: 32px; height: 32px; }
     .nav-logo-wordmark { font-size: 1rem; }
     .nav-logo-tag { font-size: 0.5rem; letter-spacing: 0.18em; margin-top: 3px; }
-    .nav-actions { gap: 0.4rem; }
-    .nav-account { padding: 0.55rem 0.7rem; font-size: 0.75rem; letter-spacing: 0.05em; gap: 0.3rem; }
-    .nav-account svg { width: 14px; height: 14px; }
     .nav-cta { padding: 0.55rem 0.9rem; font-size: 0.8rem; letter-spacing: 0.05em; }
+    .nav-cta svg { width: 13px; height: 13px; }
+    .nav-cta-sep, .nav-cta-alt { display: none; }
 
     .hero {
       grid-template-columns: 1fr;
@@ -1465,15 +1309,13 @@
     .btn-primary, .btn-secondary { padding: 0.95rem 1.4rem; font-size: 0.9rem; }
 
     .container { padding: 0 1.25rem; }
-    .about, .membership, .services, .facility, .faq, .contact, .cta { padding: 5rem 0; }
+    .about, .services, .facility, .faq, .contact, .cta { padding: 5rem 0; }
     .section-title { font-size: clamp(2rem, 8vw, 3.2rem); }
     .about-grid, .facility-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .form-row { grid-template-columns: 1fr; gap: 0; }
     .form-row .form-field { margin-bottom: 1.2rem; }
     .contact-form { padding: 1.8rem; }
     .pricing-grid, .services-grid, .stats-grid { grid-template-columns: 1fr; }
-    .price-card.featured { transform: none; }
-    .price-card.featured:hover { transform: translateY(-8px); }
     .feature-grid { grid-template-columns: 1fr; }
     .stat-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.25); padding-bottom: 1.5rem; padding-top: 1.5rem; }
     .stat-item:first-child { padding-top: 0; }
@@ -1499,9 +1341,7 @@
   @media (max-width: 480px) {
     nav { padding: 0.7rem 0.9rem; }
     .nav-logo-tag { display: none; }
-    .nav-account { padding: 0.5rem 0.6rem; }
-    .nav-account-label { display: none; }
-    .nav-cta { padding: 0.5rem 0.8rem; font-size: 0.75rem; }
+    .nav-cta { padding: 0.5rem 0.7rem; font-size: 0.72rem; }
     .hero { padding: 5.5rem 1rem 2.5rem; }
     .hero-tag { font-size: 0.6rem; padding: 0.35rem 0.6rem; }
     .hero h1 { font-size: clamp(2.6rem, 13vw, 4rem); }
@@ -1510,7 +1350,7 @@
     .hero-visual { height: 280px; }
     .container { padding: 0 1rem; }
     .ticker-item { font-size: 1.1rem; gap: 1.2rem; }
-    .price-card, .service-card { padding: 1.8rem 1.4rem; }
+    .service-card { padding: 1.8rem 1.4rem; }
   }
 
   /* Better tap targets and touch experience */
@@ -1551,21 +1391,17 @@
   </a>
   <ul class="nav-links">
     <li><a href="#about">Facility</a></li>
-    <li><a href="#membership">Membership</a></li>
     <li><a href="#services">Lessons</a></li>
     <li><a href="#faq">FAQ</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <div class="nav-actions">
-    <a href="#" class="nav-account" aria-label="Manage your account">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <circle cx="12" cy="8" r="4"/>
-        <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
-      </svg>
-      My <span class="nav-account-label">Account</span>
-    </a>
-    <a href="#cta" class="nav-cta">Join Now</a>
-  </div>
+  <a href="#" class="nav-cta" aria-label="Join now or manage your account">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" style="margin-right:0.4rem;vertical-align:-3px;">
+      <circle cx="12" cy="8" r="4"/>
+      <path d="M4 20c0-4 4-6 8-6s8 2 8 6"/>
+    </svg>
+    Join Now<span class="nav-cta-sep"> / </span><span class="nav-cta-alt">Manage Account</span>
+  </a>
 </nav>
 
 <!-- HERO -->
@@ -1582,8 +1418,8 @@
     </h1>
     <p class="lead">A members-only batting cage facility built for serious players. Cages, pitching machines, and field time on your schedule. No lines. No waiting. Just reps.</p>
     <div class="hero-ctas">
-      <a href="#membership" class="btn-primary">
-        See Memberships <span class="arrow">→</span>
+      <a href="#contact" class="btn-primary">
+        Get In Touch <span class="arrow">→</span>
       </a>
       <a href="#about" class="btn-secondary">
         Tour the Facility <span class="arrow">↓</span>
@@ -1679,56 +1515,6 @@
           <h3>Team Rentals</h3>
           <p>Reserve the whole facility for team practices, tryouts, and indoor workouts year-round.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- MEMBERSHIP -->
-<section class="membership" id="membership">
-  <div class="container">
-    <div class="section-label mono">02 / Membership</div>
-    <h2 class="section-title">Pick your <span class="red">plan</span>. Get to work.</h2>
-    <p style="max-width: 600px; opacity: 0.8; font-size: 1.1rem;">All memberships include 24/7 facility access, member pricing on lessons, and zero reservation fees on cages.</p>
-
-    <div class="pricing-grid">
-      <div class="price-card">
-        <div class="price-tier mono">Individual</div>
-        <div class="price-name">Rookie</div>
-        <ul class="price-features">
-          <li>24/7 facility access</li>
-          <li>All cages & machines</li>
-          <li>Member-only events</li>
-          <li>Discounted private lessons</li>
-        </ul>
-        <a href="#contact" class="price-cta">Get Started</a>
-      </div>
-
-      <div class="price-card featured">
-        <div class="price-badge">Most Popular</div>
-        <div class="price-tier mono">Family</div>
-        <div class="price-name">All-Star</div>
-        <ul class="price-features">
-          <li>Everything in Rookie</li>
-          <li>Multiple family members</li>
-          <li>Priority lesson booking</li>
-          <li>Discounted private lessons</li>
-          <li>Guest passes included</li>
-        </ul>
-        <a href="#contact" class="price-cta">Get Started</a>
-      </div>
-
-      <div class="price-card">
-        <div class="price-tier mono">Travel Team</div>
-        <div class="price-name">Pro Team</div>
-        <ul class="price-features">
-          <li>Full roster access</li>
-          <li>Dedicated team practice slot</li>
-          <li>Coach access pass</li>
-          <li>Group lesson discounts</li>
-          <li>Branded gear discounts</li>
-        </ul>
-        <a href="#contact" class="price-cta">Get Started</a>
       </div>
     </div>
   </div>
@@ -2009,16 +1795,6 @@
           </li>
           <li>
             <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-              <polyline points="22,6 12,13 2,6"/>
-            </svg>
-            <div>
-              <span class="label">Email</span>
-              <span class="value"><a href="mailto:info@eliteteamsports.com">info@eliteteamsports.com</a></span>
-            </div>
-          </li>
-          <li>
-            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/>
               <polyline points="12 6 12 12 16 14"/>
             </svg>
@@ -2089,7 +1865,7 @@
     <p>Tour the facility, meet the coaches, and see what 24/7 access actually feels like. Your first walkthrough is on us.</p>
     <div class="cta-buttons">
       <a href="#contact" class="btn-primary">Book a Free Tour <span class="arrow">→</span></a>
-      <a href="#membership" class="btn-secondary">View Memberships <span class="arrow">→</span></a>
+      <a href="#contact" class="btn-secondary">Send a Message <span class="arrow">→</span></a>
     </div>
   </div>
 </section>
@@ -2107,9 +1883,9 @@
         <h4>Explore</h4>
         <ul>
           <li><a href="#about">Facility</a></li>
-          <li><a href="#membership">Memberships</a></li>
           <li><a href="#services">Lessons</a></li>
           <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
 
@@ -2129,7 +1905,6 @@
         <h4>Contact</h4>
         <ul>
           <li><a href="#contact">Send a Message</a></li>
-          <li><a href="mailto:info@eliteteamsports.com">Email Us</a></li>
           <li><a href="#contact">Book a Tour</a></li>
           <li><a href="https://www.google.com/maps/search/?api=1&query=500+Wilkins+Wise+Rd+Columbus+MS" target="_blank" rel="noopener">Get Directions</a></li>
         </ul>
