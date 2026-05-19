@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<meta name="theme-color" content="#d72323" />
+<title>Terms of Service | Elite Team Sports</title>
+<meta name="description" content="Terms of Service for Elite Team Sports membership-based batting cage facility in Columbus, MS." />
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M22 18 L48 50 L20 87 L32 87 L52 60 L70 87 L82 87 L58 50 L82 13 L68 13 L52 38 L36 13 Z' fill='%23d72323' transform='translate(2,2)'/%3E%3Cpath d='M20 15 L46 50 L18 87 L30 87 L50 60 L68 87 L80 87 L56 50 L80 13 L66 13 L50 38 L34 13 Z' fill='%230a0a0a'/%3E%3Ccircle cx='50' cy='14' r='8' fill='%23d72323'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --black: #0a0a0a;
+    --ink: #141414;
+    --bone: #f4f1ea;
+    --paper: #ebe6da;
+    --red: #d72323;
+    --red-deep: #a81818;
+    --chalk: #ffffff;
+    --steel: #2a2a2a;
+    --line: rgba(10, 10, 10, 0.12);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Manrope', sans-serif;
+    background: var(--bone);
+    color: var(--ink);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection { background: var(--red); color: var(--chalk); }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' seed='3'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+    mix-blend-mode: multiply;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.2rem 2.5rem;
+    background: rgba(244, 241, 234, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    color: var(--ink);
+  }
+
+  .nav-logo svg { width: 40px; height: 40px; flex-shrink: 0; }
+
+  .nav-logo-wordmark {
+    font-size: 1.4rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .nav-logo-tag {
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.25em;
+    color: var(--red);
+    margin-top: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .nav-cta {
+    background: var(--ink);
+    color: var(--bone);
+    border: none;
+    padding: 0.8rem 1.6rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+  }
+
+  .nav-cta:hover {
+    background: var(--red);
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 0 var(--ink);
+  }
+
+  /* PAGE HEADER */
+  .page-header {
+    padding: 10rem 2.5rem 4rem;
+    border-bottom: 1px solid var(--ink);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .page-header::before {
+    content: 'TERMS';
+    position: absolute;
+    right: -3rem;
+    bottom: -3rem;
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(8rem, 18vw, 18rem);
+    line-height: 0.85;
+    color: var(--ink);
+    opacity: 0.05;
+    pointer-events: none;
+    letter-spacing: -0.02em;
+  }
+
+  .page-header-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .breadcrumb {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 1.5rem;
+    color: var(--red);
+  }
+
+  .breadcrumb a {
+    color: var(--steel);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb a:hover { color: var(--red); }
+
+  .page-header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(3rem, 7vw, 5.5rem);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  .page-header h1 .red { color: var(--red); font-style: italic; }
+
+  .page-header .meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--steel);
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .page-header .meta span::before {
+    content: '//';
+    color: var(--red);
+    margin-right: 0.5rem;
+  }
+
+  /* CONTENT */
+  .content {
+    padding: 5rem 2.5rem 8rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .content-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+
+  /* TOC */
+  .toc {
+    position: sticky;
+    top: 7rem;
+    border-left: 2px solid var(--red);
+    padding-left: 1.2rem;
+  }
+
+  .toc-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 1rem;
+  }
+
+  .toc ul { list-style: none; }
+  .toc li { padding: 0.4rem 0; }
+
+  .toc a {
+    color: var(--steel);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    display: block;
+    line-height: 1.4;
+  }
+
+  .toc a:hover { color: var(--red); }
+
+  /* ARTICLE */
+  .article h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin: 3rem 0 1rem;
+    padding-top: 1rem;
+    line-height: 1;
+  }
+
+  .article h2:first-child { margin-top: 0; }
+
+  .article h2 .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--red);
+    letter-spacing: 0.15em;
+    display: block;
+    margin-bottom: 0.6rem;
+  }
+
+  .article h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+    margin: 1.8rem 0 0.7rem;
+  }
+
+  .article p {
+    margin-bottom: 1.1rem;
+    color: var(--steel);
+    font-size: 1rem;
+  }
+
+  .article ul {
+    margin: 1rem 0 1.5rem 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .article ul li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+    color: var(--steel);
+  }
+
+  .article ul li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--red);
+    font-weight: bold;
+  }
+
+  .article a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--red);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+    transition: color 0.2s;
+  }
+
+  .article a:hover { color: var(--red); }
+
+  .article strong { color: var(--ink); font-weight: 700; }
+
+  .callout {
+    background: var(--paper);
+    border-left: 4px solid var(--red);
+    padding: 1.5rem 1.8rem;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+  }
+
+  .callout-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 0.5rem;
+  }
+
+  .warning {
+    background: var(--ink);
+    color: var(--bone);
+    padding: 2rem 2rem;
+    margin: 2.5rem 0;
+    border-left: 4px solid var(--red);
+  }
+
+  .warning p { color: var(--bone); }
+  .warning strong { color: var(--bone); }
+
+  .warning-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: 1rem;
+  }
+
+  /* FOOTER */
+  footer {
+    background: var(--ink);
+    color: var(--bone);
+    padding: 4rem 2.5rem 2rem;
+    border-top: 1px solid var(--ink);
+    position: relative;
+    z-index: 2;
+  }
+
+  .footer-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(244,241,234,0.15);
+    margin-bottom: 2rem;
+  }
+
+  .footer-top h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    line-height: 0.9;
+  }
+
+  .footer-top h3 .red { color: var(--red); }
+
+  .footer-back {
+    background: var(--red);
+    color: var(--chalk);
+    border: 2px solid var(--red);
+    padding: 1rem 1.8rem;
+    font-family: 'Anton', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .footer-back:hover {
+    background: var(--bone);
+    color: var(--ink);
+    border-color: var(--bone);
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0 var(--red);
+  }
+
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    font-size: 0.85rem;
+    color: rgba(244, 241, 234, 0.7);
+  }
+
+  .footer-legal {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .footer-legal a {
+    color: rgba(244, 241, 234, 0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-legal a:hover { color: var(--red); }
+
+  .footer-legal .dot {
+    color: var(--red);
+    font-weight: bold;
+  }
+
+  @media (max-width: 900px) {
+    nav { padding: 0.8rem 1rem; }
+    .nav-logo svg { width: 32px; height: 32px; }
+    .nav-logo-wordmark { font-size: 1rem; }
+    .nav-logo-tag { font-size: 0.5rem; letter-spacing: 0.18em; }
+    .nav-cta { padding: 0.55rem 0.9rem; font-size: 0.8rem; letter-spacing: 0.05em; }
+    .page-header { padding: 7rem 1.25rem 3rem; }
+    .page-header h1 { font-size: clamp(2.5rem, 10vw, 4rem); }
+    .page-header .meta { font-size: 0.7rem; gap: 1rem; }
+    .content { padding: 3rem 1.25rem 5rem; }
+    .content-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .toc {
+      position: relative;
+      top: 0;
+      padding: 1.2rem;
+      background: var(--paper);
+    }
+    .article h2 { font-size: 1.6rem; }
+    footer { padding: 3rem 1.25rem 2rem; }
+    .footer-top { flex-direction: column; align-items: flex-start; gap: 1.5rem; padding-bottom: 2rem; }
+    .footer-top h3 { font-size: 1.8rem; }
+    .footer-bottom { flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .footer-legal { font-size: 0.65rem; }
+  }
+
+  @media (max-width: 480px) {
+    .nav-logo-tag { display: none; }
+    .page-header { padding: 6.5rem 1rem 2.5rem; }
+    .content { padding: 2.5rem 1rem 4rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <path d="M22 18 L48 50 L20 87 L32 87 L52 60 L70 87 L82 87 L58 50 L82 13 L68 13 L52 38 L36 13 Z" fill="#d72323" transform="translate(2, 2)"/>
+      <path d="M20 15 L46 50 L18 87 L30 87 L50 60 L68 87 L80 87 L56 50 L80 13 L66 13 L50 38 L34 13 Z" fill="#0a0a0a"/>
+      <circle cx="50" cy="14" r="8" fill="#d72323"/>
+    </svg>
+    <div>
+      <div class="nav-logo-wordmark">Elite Team Sports</div>
+      <span class="nav-logo-tag">Train · Develop · Win</span>
+    </div>
+  </a>
+  <a href="index.html#cta" class="nav-cta">Join Now</a>
+</nav>
+
+<header class="page-header">
+  <div class="page-header-inner">
+    <div class="breadcrumb mono">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span>Terms of Service</span>
+    </div>
+    <h1>Terms of <span class="red">Service</span></h1>
+    <div class="meta">
+      <span>Effective: May 19, 2026</span>
+      <span>Last Updated: May 19, 2026</span>
+    </div>
+  </div>
+</header>
+
+<main class="content">
+  <div class="content-inner">
+
+    <aside class="toc">
+      <div class="toc-label">On this page</div>
+      <ul>
+        <li><a href="#acceptance">Acceptance of Terms</a></li>
+        <li><a href="#eligibility">Eligibility</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#payment">Payments & Billing</a></li>
+        <li><a href="#cancellation">Cancellation & Refunds</a></li>
+        <li><a href="#rules">Facility Rules</a></li>
+        <li><a href="#assumption-risk">Assumption of Risk</a></li>
+        <li><a href="#liability">Limitation of Liability</a></li>
+        <li><a href="#conduct">Member Conduct</a></li>
+        <li><a href="#ip">Intellectual Property</a></li>
+        <li><a href="#disputes">Disputes</a></li>
+        <li><a href="#changes">Changes to Terms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </aside>
+
+    <article class="article">
+
+      <h2 id="acceptance"><span class="num">// 01</span>Acceptance of Terms</h2>
+      <p>Welcome to Elite Team Sports. These Terms of Service ("Terms") govern your use of our website, facility, memberships, lessons, and any related services (collectively, the "Services") provided by Elite Team Sports ("we," "us," or "our").</p>
+      <p>By accessing our website, signing up for a membership, booking a lesson, or entering our facility, you agree to be bound by these Terms and our <a href="privacy.html">Privacy Policy</a>. If you do not agree, please do not use our Services.</p>
+
+      <h2 id="eligibility"><span class="num">// 02</span>Eligibility</h2>
+      <p>To enter into a membership agreement, you must be at least 18 years old. Minors may use the facility only when included as part of a parent or guardian's family membership, or when accompanied by a registered adult member or coach. A parent or legal guardian must sign all waivers and accept these Terms on behalf of any minor.</p>
+
+      <h2 id="membership"><span class="num">// 03</span>Membership</h2>
+
+      <h3>Membership Plans</h3>
+      <p>We offer several membership tiers, each with different access levels, included benefits, and pricing. Current plans, pricing, and benefits are described on our website and may be updated from time to time.</p>
+
+      <h3>Access</h3>
+      <ul>
+        <li>Members receive personal keypad access codes for facility entry.</li>
+        <li>Access codes are personal and non-transferable. Sharing your code is grounds for membership termination without refund.</li>
+        <li>Family memberships cover registered household members only.</li>
+        <li>Team memberships cover the registered roster only and require an active head-of-team contact.</li>
+      </ul>
+
+      <h3>Guest Policy</h3>
+      <p>Guests must be registered in advance, sign a liability waiver, and may only access the facility when accompanied by a member in good standing. We reserve the right to limit guest visits or deny access at our discretion.</p>
+
+      <h2 id="payment"><span class="num">// 04</span>Payments & Billing</h2>
+      <ul>
+        <li><strong>Recurring Billing:</strong> Memberships are billed monthly in advance and automatically renew until canceled.</li>
+        <li><strong>Payment Method:</strong> You authorize us to charge your designated payment method on each billing date.</li>
+        <li><strong>Failed Payments:</strong> If a payment fails, we may suspend your access until the balance is cleared. Repeated failures may result in termination.</li>
+        <li><strong>Price Changes:</strong> We may change membership pricing with at least 30 days' notice via email or posted notice at the facility.</li>
+        <li><strong>Taxes:</strong> Applicable sales and use taxes will be added where required by law.</li>
+      </ul>
+
+      <h2 id="cancellation"><span class="num">// 05</span>Cancellation & Refunds</h2>
+      <ul>
+        <li>You may cancel your membership at any time with at least <strong>30 days' written notice</strong> sent to our office or via email.</li>
+        <li>Cancellations take effect at the end of the current billing cycle following the 30-day notice period.</li>
+        <li>Membership fees are non-refundable except where required by law.</li>
+        <li>Private lesson packages are non-refundable but may be transferable in limited circumstances at our discretion.</li>
+        <li>Team rental deposits are non-refundable within 14 days of the reserved date.</li>
+      </ul>
+
+      <h2 id="rules"><span class="num">// 06</span>Facility Rules</h2>
+      <p>All members, guests, and visitors must follow facility rules at all times. Failure to follow rules may result in suspension or termination of membership without refund. Key rules include:</p>
+      <ul>
+        <li>Wear closed-toe athletic footwear at all times in cage areas.</li>
+        <li>Wear a batting helmet when in any cage with a live machine.</li>
+        <li>Only one batter and one observer per cage at a time.</li>
+        <li>Do not enter another active cage. Wait for the cage to clear and the machine to stop.</li>
+        <li>Inspect equipment before use. Report damage immediately.</li>
+        <li>Children under 12 must be supervised by a parent or guardian at all times.</li>
+        <li>No food, gum, or open beverages inside cage areas.</li>
+        <li>Clean up after yourself. Return equipment to its proper place.</li>
+        <li>Be respectful of other members, staff, coaches, and the facility.</li>
+      </ul>
+      <p>Additional rules may be posted at the facility and on our website. All such rules are incorporated into these Terms.</p>
+
+      <h2 id="assumption-risk"><span class="num">// 07</span>Assumption of Risk & Waiver</h2>
+
+      <div class="warning">
+        <div class="warning-label">// Important · Read Carefully</div>
+        <p><strong>Baseball, softball, and other athletic activities involve inherent risks of physical injury</strong>, including serious injury or death. By using our facility and Services, you voluntarily assume all risks associated with these activities, including risks from batted balls, pitched balls, equipment malfunction, slips and falls, contact with other participants, and your own physical exertion.</p>
+      </div>
+
+      <p>All members, guests, and participants (or their parent/guardian, if a minor) are required to sign a separate Liability Waiver and Release before using the facility. The Liability Waiver is incorporated into these Terms by reference. Refusal to sign the Waiver disqualifies you from using the Services.</p>
+
+      <h2 id="liability"><span class="num">// 08</span>Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law:</p>
+      <ul>
+        <li>Elite Team Sports, its owners, employees, coaches, and contractors are not liable for any indirect, incidental, consequential, special, or punitive damages arising from your use of the Services.</li>
+        <li>Our total liability for any claim related to the Services will not exceed the amount you paid us in the 12 months preceding the claim.</li>
+        <li>We are not responsible for lost, stolen, or damaged personal property left at the facility.</li>
+        <li>The Services and facility are provided "as is" without warranties of any kind, express or implied, except as required by law.</li>
+      </ul>
+
+      <h2 id="conduct"><span class="num">// 09</span>Member Conduct</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>Harass, threaten, or behave abusively toward any member, guest, coach, or staff member.</li>
+        <li>Use the facility while under the influence of alcohol or illegal drugs.</li>
+        <li>Bring weapons of any kind into the facility.</li>
+        <li>Damage or tamper with equipment, machines, or property.</li>
+        <li>Photograph or video record other members or minors without consent.</li>
+        <li>Use the facility for commercial purposes (including private instruction or coaching) without prior written authorization.</li>
+        <li>Bypass or share security access codes.</li>
+      </ul>
+      <p>Violation of these rules may result in immediate suspension or termination of membership without refund and, where appropriate, legal action.</p>
+
+      <h2 id="ip"><span class="num">// 10</span>Intellectual Property</h2>
+      <p>All content on our website and at our facility (including the Elite Team Sports name, logo, designs, photos, videos, and written materials) is the property of Elite Team Sports or its licensors and is protected by intellectual property laws. You may not copy, reproduce, or use any of this content for commercial purposes without our prior written permission.</p>
+      <p>If we use photos or video of you or your child (taken at the facility or during events), we will do so in accordance with the photo/video release in our Privacy Policy and Waiver.</p>
+
+      <h2 id="disputes"><span class="num">// 11</span>Disputes & Governing Law</h2>
+      <p>These Terms are governed by the laws of the State of Mississippi, without regard to its conflict of laws principles. Any dispute arising out of or relating to these Terms or the Services will be resolved in the state or federal courts located in Lowndes County, Mississippi, and you consent to the personal jurisdiction of those courts.</p>
+      <p>Before filing any formal claim, the parties agree to first attempt to resolve disputes informally by contacting us with a written description of the issue. If the dispute cannot be resolved within 30 days, either party may proceed with formal action.</p>
+
+      <h2 id="changes"><span class="num">// 12</span>Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. We will post the updated Terms on this page with a new effective date and, when appropriate, notify members by email or at the facility. Your continued use of the Services after changes are posted constitutes acceptance of the updated Terms.</p>
+
+      <h2 id="contact"><span class="num">// 13</span>Contact</h2>
+      <p>Questions about these Terms? Reach out to us:</p>
+      <p>
+        <strong>Elite Team Sports</strong><br>
+        500 Wilkins Wise Rd<br>
+        Columbus, MS<br>
+        Email: <a href="mailto:info@eliteteamsports.com">info@eliteteamsports.com</a>
+      </p>
+
+      <div class="callout">
+        <div class="callout-label">Acknowledgment</div>
+        By signing up for a membership, entering our facility, or using our Services, you acknowledge that you have read, understood, and agreed to these Terms of Service and our Privacy Policy.
+      </div>
+
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <h3>Train. Develop. <span class="red">Win.</span></h3>
+      <a href="index.html#membership" class="footer-back">See Memberships →</a>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 Elite Team Sports. All rights reserved.</div>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <span class="dot">·</span>
+        <a href="terms.html">Terms of Service</a>
+        <span class="dot">·</span>
+        <a href="http://programmaticpartners.com" target="_blank" rel="noopener">Built by Programmatic Partners</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.toc a').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      if (id.length > 1) {
+        const target = document.querySelector(id);
+        if (target) {
+          e.preventDefault();
+          const top = target.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
